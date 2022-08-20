@@ -30,5 +30,17 @@ namespace FormPersonaEdadHE
             get { return FechaNacimiento; }
         }
         #endregion
+        #region Constructores
+        public Persona() { }
+        public Persona(string nombre, long documentoIdentidad, DateTime fechaNacimiento, string p_nombre, long p_dni, DateTime p_fechanacimiento)
+        {
+            Nombre = nombre;
+            DocumentoIdentidad = documentoIdentidad;
+            FechaNacimiento = fechaNacimiento;
+            this.p_nombre = p_nombre;
+            this.p_dni = p_dni;
+            this.p_fechanacimiento = p_fechanacimiento;
+        }
+        #endregion
     }
 }
