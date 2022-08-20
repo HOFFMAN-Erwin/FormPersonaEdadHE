@@ -42,5 +42,25 @@ namespace FormPersonaEdadHE
             this.p_fechanacimiento = p_fechanacimiento;
         }
         #endregion
+        #region Metodos
+        public int EdadPersona()
+        {
+            int edad = 0;
+            try
+            {
+                if (FechaNacimiento.Date > DateTime.Today) throw new Exception("La fecha ingresada no es correcta");
+                else
+                {
+                    edad = DateTime.Today.AddTicks(-FechaNacimiento.Ticks).Year - 1;
+                    return edad;
+                }
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+            return (int)DocumentoIdentidad;
+            #endregion
+        }
     }
 }
