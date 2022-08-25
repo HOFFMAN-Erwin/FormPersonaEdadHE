@@ -104,6 +104,7 @@
             this.btn_Persona.TabIndex = 4;
             this.btn_Persona.Text = "Persona";
             this.btn_Persona.UseVisualStyleBackColor = true;
+            this.btn_Persona.Click += new System.EventHandler(this.btn_Persona_Click);
             // 
             // btn_Edad
             // 
@@ -113,6 +114,7 @@
             this.btn_Edad.TabIndex = 4;
             this.btn_Edad.Text = "Edad";
             this.btn_Edad.UseVisualStyleBackColor = true;
+            this.btn_Edad.Click += new System.EventHandler(this.btn_Edad_Click);
             // 
             // Form1
             // 

@@ -29,6 +29,10 @@ namespace FormPersonaEdadHE
             set { FechaNacimiento = value; }
             get { return FechaNacimiento; }
         }
+
+        public string V1 { get; }
+        public int V2 { get; }
+        public DateTime DateTime { get; }
         #endregion
         #region Constructores
         public Persona() { }
@@ -40,6 +44,13 @@ namespace FormPersonaEdadHE
             this.p_nombre = p_nombre;
             this.p_dni = p_dni;
             this.p_fechanacimiento = p_fechanacimiento;
+        }
+
+        public Persona(string v1, int v2, DateTime dateTime)
+        {
+            V1 = v1;
+            V2 = v2;
+            DateTime = dateTime;
         }
         #endregion
         #region Metodos
