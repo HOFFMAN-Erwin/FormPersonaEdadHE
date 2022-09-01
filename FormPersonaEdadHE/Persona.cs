@@ -71,7 +71,9 @@ namespace FormPersonaEdadHE
                 return -1;
             }
             return (int)DocumentoIdentidad;
+            throw new Exception();
             #endregion
         }
+
     }
 }

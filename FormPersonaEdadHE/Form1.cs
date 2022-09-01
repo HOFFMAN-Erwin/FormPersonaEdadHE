@@ -15,7 +15,7 @@ namespace FormPersonaEdadHE
 
         private void btn_Edad_Click(object sender, EventArgs e)
         {
-            lblEdad.Text = Convert.ToString(UnaPersona.EdadPersona(UnaPersona.p_fechanacimiento));
+           // lblEdad.Text = Convert.ToString(UnaPersona.EdadPersona(UnaPersona.p_fechanacimiento));
         }
     }
 }
